@@ -44,9 +44,16 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-	Name = ""
+	Name = "GONER FE"
 	Callback = function()
-      	loadstring(game:HttpGet('loadstring(game:HttpGet("https://raw.githubusercontent.com/IssacRawCoreOfficiak/CMD-FE/main/cmdfe.lua"))()
+      	DisableFlingHealthBar = false
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Goner"))()
   	end    
 })
 		
+Tab:AddButton({
+	Name = "UPTEMPO MFK"
+	Callback = function()
+      	local sound = Instance.new("Sound") sound.SoundId = "rbxassetid://89787069440374" sound.Looped = true
+  	end    
+})
